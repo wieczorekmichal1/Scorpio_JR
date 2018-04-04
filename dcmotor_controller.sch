@@ -24214,6 +24214,80 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </deviceset>
 </devicesets>
 </library>
+<library name="fuse" urn="urn:adsk.eagle:library:233">
+<description>&lt;b&gt;Fuses and Fuse Holders&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MF-SMDF050" urn="urn:adsk.eagle:footprint:14055/1" library_version="1">
+<description>&lt;b&gt;MF-SMDF Series - PRC Resettable Fuses&lt;/b&gt;&lt;p&gt;
+Source: http://www.farnell.com/datasheets/716597.pdf</description>
+<smd name="1" x="-2.45" y="0" dx="1.5" dy="4.6" layer="1"/>
+<smd name="2" x="2.45" y="0" dx="1.5" dy="4.6" layer="1"/>
+<wire x1="-2.675" y1="-2.4125" x2="-2.675" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-2.675" y1="-0.8" x2="-2.6625" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-2.6625" y1="-0.8" x2="-2.6625" y2="0.7875" width="0.1016" layer="51" curve="126.343451"/>
+<wire x1="-2.6625" y1="0.7875" x2="-2.675" y2="0.7875" width="0.1016" layer="51"/>
+<wire x1="-2.675" y1="0.7875" x2="-2.675" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="-2.675" y1="2.4125" x2="-1.825" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="-1.825" y1="2.4125" x2="1.825" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="1.825" y1="2.4125" x2="2.675" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="2.4125" x2="2.675" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="-0.7875" x2="2.675" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="-2.4125" x2="1.825" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="1.825" y1="-2.4125" x2="-1.825" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="-1.825" y1="-2.4125" x2="-2.675" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="-1.825" y1="-2.4125" x2="-1.825" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="1.825" y1="2.4125" x2="1.825" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="0.8" x2="2.675" y2="-0.7875" width="0.1016" layer="51" curve="126.343451"/>
+<text x="-3.1" y="2.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.225" y="-4.05" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="MF-SMDF050" urn="urn:adsk.eagle:package:14081/1" type="box" library_version="1">
+<description>MF-SMDF Series - PRC Resettable Fuses
+Source: http://www.farnell.com/datasheets/716597.pdf</description>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="FUSE" urn="urn:adsk.eagle:symbol:14027/1" library_version="1">
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MF-SMDF" urn="urn:adsk.eagle:component:14104/1" library_version="1">
+<description>&lt;b&gt;MF-SMDF Series - PRC Resettable Fuses&lt;/b&gt;&lt;p&gt;
+Source: http://www.farnell.com/datasheets/716597.pdf</description>
+<gates>
+<gate name="A" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MF-SMDF050">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14081/1"/>
+</package3dinstances>
+<technologies>
+<technology name="050"/>
+<technology name="150"/>
+<technology name="200"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -24360,6 +24434,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="D" package3d_urn="urn:adsk.eagle:package:23424/2" value="100u, 35V"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="100n, 50V"/>
+<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="D" package3d_urn="urn:adsk.eagle:package:23424/2" value="100u, 35V"/>
+<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="100n, 50V"/>
+<part name="U$2" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="MF-SMDF" device="" package3d_urn="urn:adsk.eagle:package:14081/1" technology="200"/>
 </parts>
 <sheets>
 <sheet>
@@ -24506,21 +24585,26 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="C24" gate="G$1" x="-327.66" y="88.9"/>
 <instance part="GND43" gate="1" x="-353.06" y="76.2"/>
 <instance part="GND44" gate="1" x="-327.66" y="76.2"/>
-<instance part="D18" gate="G$1" x="-238.76" y="172.72" rot="R90"/>
-<instance part="X3" gate="-1" x="-266.7" y="175.26"/>
-<instance part="X3" gate="-2" x="-266.7" y="170.18"/>
-<instance part="P+11" gate="VCC" x="-238.76" y="187.96"/>
-<instance part="GND45" gate="1" x="-238.76" y="160.02"/>
+<instance part="D18" gate="G$1" x="-226.06" y="172.72" rot="R90"/>
+<instance part="X3" gate="-1" x="-274.32" y="175.26"/>
+<instance part="X3" gate="-2" x="-274.32" y="170.18"/>
+<instance part="P+11" gate="VCC" x="-226.06" y="187.96"/>
+<instance part="GND45" gate="1" x="-226.06" y="160.02"/>
 <instance part="P+12" gate="VCC" x="-276.86" y="157.48"/>
 <instance part="R19" gate="G$1" x="-266.7" y="147.32"/>
 <instance part="LED2" gate="G$1" x="-248.92" y="147.32" rot="R90"/>
 <instance part="GND46" gate="1" x="-236.22" y="139.7"/>
-<instance part="D1" gate="1" x="-254" y="177.8"/>
-<instance part="U$1" gate="G$1" x="-170.18" y="165.1"/>
-<instance part="P+4" gate="VCC" x="-195.58" y="180.34"/>
-<instance part="GND8" gate="1" x="-195.58" y="149.86"/>
-<instance part="GND47" gate="1" x="-144.78" y="149.86"/>
-<instance part="P+5" gate="VCC" x="-139.7" y="180.34"/>
+<instance part="D1" gate="1" x="-261.62" y="177.8"/>
+<instance part="U$1" gate="G$1" x="-152.4" y="172.72"/>
+<instance part="P+4" gate="VCC" x="-193.04" y="187.96"/>
+<instance part="GND8" gate="1" x="-193.04" y="160.02"/>
+<instance part="GND47" gate="1" x="-116.84" y="160.02"/>
+<instance part="P+5" gate="VCC" x="-116.84" y="187.96"/>
+<instance part="C9" gate="G$1" x="-193.04" y="172.72"/>
+<instance part="C10" gate="G$1" x="-177.8" y="172.72"/>
+<instance part="C25" gate="G$1" x="-132.08" y="172.72"/>
+<instance part="C26" gate="G$1" x="-116.84" y="172.72"/>
+<instance part="U$2" gate="A" x="-243.84" y="177.8"/>
 </instances>
 <busses>
 </busses>
@@ -24890,13 +24974,13 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <segment>
 <pinref part="GND45" gate="1" pin="GND"/>
 <pinref part="D18" gate="G$1" pin="A"/>
-<wire x1="-238.76" y1="170.18" x2="-238.76" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="170.18" x2="-226.06" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-2" pin="KL"/>
-<wire x1="-238.76" y1="167.64" x2="-238.76" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="-261.62" y1="170.18" x2="-256.54" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="-256.54" y1="170.18" x2="-256.54" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="-256.54" y1="167.64" x2="-238.76" y2="167.64" width="0.1524" layer="91"/>
-<junction x="-238.76" y="167.64"/>
+<wire x1="-226.06" y1="167.64" x2="-226.06" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="-269.24" y1="170.18" x2="-264.16" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="170.18" x2="-264.16" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="167.64" x2="-226.06" y2="167.64" width="0.1524" layer="91"/>
+<junction x="-226.06" y="167.64"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
@@ -24906,15 +24990,25 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN-"/>
-<wire x1="-187.96" y1="160.02" x2="-195.58" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="160.02" x2="-195.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="167.64" x2="-177.8" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="167.64" x2="-193.04" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="167.64" x2="-193.04" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="-"/>
+<junction x="-193.04" y="167.64"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<junction x="-177.8" y="167.64"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT-"/>
-<wire x1="-152.4" y1="160.02" x2="-144.78" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="-144.78" y1="160.02" x2="-144.78" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="167.64" x2="-132.08" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="167.64" x2="-116.84" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="167.64" x2="-116.84" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="GND47" gate="1" pin="GND"/>
+<pinref part="C25" gate="G$1" pin="-"/>
+<junction x="-132.08" y="167.64"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<junction x="-116.84" y="167.64"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -25040,25 +25134,39 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-276.86" y1="147.32" x2="-271.78" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-251.46" y1="177.8" x2="-238.76" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="D18" gate="G$1" pin="C"/>
-<wire x1="-238.76" y1="177.8" x2="-238.76" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="C"/>
 <pinref part="P+11" gate="VCC" pin="VCC"/>
-<wire x1="-238.76" y1="177.8" x2="-238.76" y2="185.42" width="0.1524" layer="91"/>
-<junction x="-238.76" y="177.8"/>
+<wire x1="-226.06" y1="175.26" x2="-226.06" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="A" pin="2"/>
+<wire x1="-226.06" y1="177.8" x2="-226.06" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="-238.76" y1="177.8" x2="-226.06" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-226.06" y="177.8"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN+"/>
-<wire x1="-187.96" y1="170.18" x2="-195.58" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="170.18" x2="-195.58" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="177.8" x2="-177.8" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="177.8" x2="-193.04" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="177.8" x2="-193.04" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="C9" gate="G$1" pin="+"/>
+<wire x1="-193.04" y1="175.26" x2="-193.04" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-193.04" y="177.8"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="-177.8" y1="175.26" x2="-177.8" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-177.8" y="177.8"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT+"/>
-<wire x1="-152.4" y1="170.18" x2="-139.7" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="-139.7" y1="170.18" x2="-139.7" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="177.8" x2="-132.08" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="177.8" x2="-116.84" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="177.8" x2="-116.84" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="C25" gate="G$1" pin="+"/>
+<wire x1="-132.08" y1="175.26" x2="-132.08" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-132.08" y="177.8"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="-116.84" y1="175.26" x2="-116.84" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-116.84" y="177.8"/>
 </segment>
 </net>
 <net name="SEN4" class="0">
@@ -25964,9 +26072,16 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="N$11" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
-<wire x1="-261.62" y1="175.26" x2="-256.54" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="-256.54" y1="175.26" x2="-256.54" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-269.24" y1="175.26" x2="-264.16" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="175.26" x2="-264.16" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="C"/>
+<pinref part="U$2" gate="A" pin="1"/>
+<wire x1="-259.08" y1="177.8" x2="-248.92" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
