@@ -24454,6 +24454,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <text x="-474.98" y="45.72" size="3.81" layer="95">DC MOTOR CONTROLLERS</text>
 <wire x1="-289.56" y1="198.12" x2="-289.56" y2="40.64" width="0.508" layer="95"/>
 <text x="-370.84" y="45.72" size="3.81" layer="95">BUS TRANSCEIVER 3V3 - 5V</text>
+<text x="-279.4" y="187.96" size="3.81" layer="95">POWER</text>
 </plain>
 <instances>
 <instance part="IC1" gate="L298" x="-530.86" y="160.02"/>
