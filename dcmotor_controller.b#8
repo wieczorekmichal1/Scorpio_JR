@@ -4922,8 +4922,8 @@ design rules under a new name.</description>
 <element name="R5" library="rcl" package="R2512" value="0R25" x="82.55" y="91.44" rot="R270">
 <attribute name="LINK" value="http://www.tme.eu/pl/details/cs2512-0r25-1%25-hp/rezystory-smd-2512/viking/cs12ftfsr250/" x="82.55" y="91.44" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R6" library="resistor" package="M0805" value="10k" x="-62.23" y="104.14"/>
-<element name="R63" library="resistor" package="M0805" value="10k" x="-52.07" y="104.14"/>
+<element name="R6" library="resistor" package="M0805" value="10k" x="66.04" y="64.77" rot="R180"/>
+<element name="R63" library="resistor" package="M0805" value="10k" x="71.12" y="64.77" rot="R180"/>
 <element name="R7" library="resistor" package="M0805" value="10k 1%" x="54.61" y="38.1" rot="R270"/>
 <element name="R8" library="resistor" package="M0805" value="10k 1%" x="58.42" y="38.1" rot="R270"/>
 <element name="SV2" library="con-ml" library_urn="urn:adsk.eagle:library:164" package="ML10L" package3d_urn="urn:adsk.eagle:package:8678/1" value="" x="152.4" y="86.36" rot="R270">
@@ -5382,9 +5382,10 @@ design rules under a new name.</description>
 <wire x1="73.66" y1="84.77" x2="73.66" y2="80.3275" width="0.3048" layer="1"/>
 <wire x1="68.26" y1="85.09" x2="69.85" y2="85.09" width="0.3048" layer="1"/>
 <wire x1="69.85" y1="85.09" x2="69.85" y2="80.3275" width="0.3048" layer="1"/>
+<wire x1="66.99" y1="64.77" x2="68.58" y2="64.77" width="0.3048" layer="1"/>
+<wire x1="68.58" y1="64.77" x2="70.17" y2="64.77" width="0.3048" layer="1"/>
+<wire x1="68.58" y1="69.85" x2="68.58" y2="64.77" width="0.3048" layer="1"/>
 <wire x1="1.524" y1="80.264" x2="-13.97" y2="83.82" width="0" layer="19" extent="16-16"/>
-<wire x1="-51.12" y1="104.14" x2="-13.97" y2="83.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-63.18" y1="104.14" x2="-51.12" y2="104.14" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.37" y1="29.21" x2="1.524" y2="2.54" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SEN4">
@@ -6120,12 +6121,18 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="IC5" pad="48"/>
 <contactref element="R6" pad="2"/>
-<wire x1="-61.28" y1="104.14" x2="66.14" y2="67.6275" width="0" layer="19" extent="1-1"/>
+<wire x1="66.14" y1="67.6275" x2="65.0875" y2="67.6275" width="0.3048" layer="1"/>
+<wire x1="65.0875" y1="67.6275" x2="64.77" y2="67.31" width="0.3048" layer="1"/>
+<wire x1="64.77" y1="67.31" x2="64.77" y2="64.77" width="0.3048" layer="1"/>
+<wire x1="64.77" y1="64.77" x2="65.09" y2="64.77" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="IC5" pad="1"/>
 <contactref element="R63" pad="1"/>
-<wire x1="-53.02" y1="104.14" x2="76.1" y2="67.6275" width="0" layer="19" extent="1-1"/>
+<wire x1="76.1" y1="67.6275" x2="73.9775" y2="67.6275" width="0.3048" layer="1"/>
+<wire x1="73.9775" y1="67.6275" x2="73.66" y2="67.31" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="67.31" x2="73.66" y2="64.77" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="64.77" x2="72.07" y2="64.77" width="0.3048" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="C25" pad="1"/>

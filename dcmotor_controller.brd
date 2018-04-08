@@ -3,7 +3,7 @@
 <eagle version="8.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -167,6 +167,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyODdlZWVl" projecturn="a.cGVyc29uYWw6dWUyODdlZWVlIzIwMTgwNDA4MTI2NTg3MzI2" f3durn="urn:adsk.wipprod:dm.lineage:cQiRumaYQySxqMgdQmJA_w" pcbguid="6678936a-43be-4169-baa4-ea48a086b149" lastpulledtime="" lastsyncedchangeguid="47db0d4f-7243-e3a9-a740-30e95a28c65b"/>
 <plain>
 <wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
 <wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
@@ -4277,54 +4278,6 @@ Please send your comments to the mail address above.</description>
 </package>
 </packages>
 </library>
-<library name="lm2596" urn="urn:adsk.eagle:library:2557020">
-<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
-&lt;br&gt;&lt;br&gt;
-The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
-The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
-&lt;br&gt;
-By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
-&lt;br&gt;
-The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
-&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;center&gt;
-&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
-&lt;/center&gt;</description>
-<packages>
-<package name="DC-DC-STEP-DOWN-LM2596" urn="urn:adsk.eagle:footprint:2557160/1" library_version="1">
-<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
-<wire x1="-21.59" y1="10.414" x2="21.59" y2="10.414" width="0.127" layer="21"/>
-<wire x1="21.59" y1="10.414" x2="21.59" y2="-10.414" width="0.127" layer="21"/>
-<wire x1="21.59" y1="-10.414" x2="-21.59" y2="-10.414" width="0.127" layer="21"/>
-<wire x1="-21.59" y1="-10.414" x2="-21.59" y2="10.414" width="0.127" layer="21"/>
-<wire x1="19.685" y1="6.985" x2="19.685" y2="5.715" width="0.254" layer="21"/>
-<wire x1="19.05" y1="6.35" x2="20.32" y2="6.35" width="0.254" layer="21"/>
-<wire x1="-19.685" y1="-6.985" x2="-19.685" y2="-5.715" width="0.254" layer="21"/>
-<wire x1="19.685" y1="-6.985" x2="19.685" y2="-5.715" width="0.254" layer="21"/>
-<wire x1="-19.685" y1="6.985" x2="-19.685" y2="5.715" width="0.254" layer="21"/>
-<wire x1="-20.32" y1="6.35" x2="-19.05" y2="6.35" width="0.254" layer="21"/>
-<pad name="IN+" x="-19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
-<pad name="IN-" x="-19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
-<pad name="OUT-" x="19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
-<pad name="OUT+" x="19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
-<hole x="-14.478" y="7.62" drill="3"/>
-<hole x="15.24" y="-7.62" drill="3"/>
-<text x="0" y="11.43" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-11.43" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<text x="-19.685" y="0" size="1.778" layer="21" rot="R90" align="center">IN</text>
-<text x="19.685" y="0" size="1.778" layer="21" rot="R90" align="center">OUT</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="DC-DC-STEP-DOWN-LM2596" urn="urn:adsk.eagle:package:2557271/1" type="box" library_version="1">
-<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
-</package3d>
-</packages3d>
-</library>
 <library name="stm32">
 <description>ST Cortex-M3 STM32F101/103 processor family  in LQFP100, 64, 48 and VFQPFN36 pin versions</description>
 <packages>
@@ -4551,6 +4504,54 @@ Grid 2.54 mm&lt;p&gt;
 <packages3d>
 <package3d name="2POL254" urn="urn:adsk.eagle:package:9320/1" type="box" library_version="1">
 <description>PHOENIX CONNECTOR</description>
+</package3d>
+</packages3d>
+</library>
+<library name="lm2596" urn="urn:adsk.eagle:library:2557020">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;
+&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
+&lt;/center&gt;</description>
+<packages>
+<package name="DC-DC-STEP-DOWN-LM2596" urn="urn:adsk.eagle:footprint:2557160/1" library_version="2">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
+<wire x1="-21.59" y1="10.414" x2="21.59" y2="10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="10.414" x2="21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-10.414" x2="-21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="-21.59" y1="-10.414" x2="-21.59" y2="10.414" width="0.127" layer="21"/>
+<wire x1="19.685" y1="6.985" x2="19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="19.05" y1="6.35" x2="20.32" y2="6.35" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="-6.985" x2="-19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="19.685" y1="-6.985" x2="19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="6.985" x2="-19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="6.35" x2="-19.05" y2="6.35" width="0.254" layer="21"/>
+<pad name="IN+" x="-19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="IN-" x="-19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="OUT-" x="19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="OUT+" x="19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
+<hole x="-14.478" y="7.62" drill="3"/>
+<hole x="15.24" y="-7.62" drill="3"/>
+<text x="0" y="11.43" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-19.685" y="0" size="1.778" layer="21" rot="R90" align="center">IN</text>
+<text x="19.685" y="0" size="1.778" layer="21" rot="R90" align="center">OUT</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="DC-DC-STEP-DOWN-LM2596" urn="urn:adsk.eagle:package:2557271/2" type="model" library_version="2">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
 </package3d>
 </packages3d>
 </library>
@@ -5060,10 +5061,6 @@ design rules under a new name.</description>
 <element name="T14" library="we-transistor" package="SOT23" value="BSS306N" x="53.34" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="55.118" y="31.75" size="0.8128" layer="25" font="vector" ratio="10" align="center"/>
 </element>
-<element name="U$1" library="lm2596" library_urn="urn:adsk.eagle:library:2557020" package="DC-DC-STEP-DOWN-LM2596" package3d_urn="urn:adsk.eagle:package:2557271/1" value="DC-DC-STEP-DOWN-LM2596" x="63.5" y="15.24" smashed="yes">
-<attribute name="NAME" x="63.5" y="12.192" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="VALUE" x="63.5" y="6.604" size="1.27" layer="27" align="top-center"/>
-</element>
 <element name="U2" library="stm32" package="TQFP64" value="STM32F10XRXT6" x="93.98" y="54.61" smashed="yes">
 <attribute name="NAME" x="98.044" y="59.436" size="1.778" layer="25"/>
 </element>
@@ -5091,6 +5088,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="15.24" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="12.192" y="10.414" size="1.27" layer="27" rot="R270"/>
 </element>
+<element name="U$1" library="lm2596" library_urn="urn:adsk.eagle:library:2557020" package="DC-DC-STEP-DOWN-LM2596" package3d_urn="urn:adsk.eagle:package:2557271/2" value="DC-DC-STEP-DOWN-LM2596" x="30.226" y="-26.162"/>
 </elements>
 <signals>
 <signal name="PWM_SIGNAL3">
@@ -5257,8 +5255,6 @@ design rules under a new name.</description>
 <contactref element="SV4" pad="10"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="2"/>
-<contactref element="U$1" pad="IN-"/>
-<contactref element="U$1" pad="OUT-"/>
 <contactref element="C5" pad="2"/>
 <contactref element="R8" pad="1"/>
 <contactref element="R7" pad="1"/>
@@ -5355,10 +5351,8 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="63.5" x2="32.53" y2="63.5" width="1.016" layer="16"/>
 <wire x1="34.29" y1="63.5" x2="34.29" y2="55.88" width="1.016" layer="16"/>
 <wire x1="34.29" y1="55.88" x2="32.53" y2="55.88" width="1.016" layer="16"/>
-<wire x1="83.312" y1="6.604" x2="79.248" y2="2.54" width="1.016" layer="16"/>
 <wire x1="79.248" y1="2.54" x2="41.91" y2="2.54" width="1.016" layer="16"/>
 <wire x1="41.91" y1="2.54" x2="41.91" y2="4.826" width="1.016" layer="16"/>
-<wire x1="41.91" y1="4.826" x2="43.688" y2="6.604" width="1.016" layer="16"/>
 <wire x1="95.25" y1="3.81" x2="93.98" y2="2.54" width="1.016" layer="1"/>
 <wire x1="95.25" y1="3.81" x2="95.25" y2="6.35" width="1.016" layer="1"/>
 <wire x1="41.91" y1="74.93" x2="34.29" y2="74.93" width="1.016" layer="16"/>
@@ -5504,7 +5498,11 @@ design rules under a new name.</description>
 <wire x1="102.87" y1="38.1" x2="100.33" y2="38.1" width="0.3048" layer="1"/>
 <via x="36.83" y="2.54" extent="1-16" drill="0.75"/>
 <wire x1="93.98" y1="2.54" x2="87.376" y2="2.54" width="1.016" layer="1"/>
-<wire x1="87.376" y1="2.54" x2="83.312" y2="6.604" width="1.016" layer="1"/>
+<contactref element="U$1" pad="IN-"/>
+<contactref element="U$1" pad="OUT-"/>
+<wire x1="79.248" y1="2.54" x2="87.376" y2="2.54" width="0" layer="19" extent="1-16"/>
+<wire x1="10.414" y1="-34.798" x2="18.034" y2="1.524" width="0" layer="19" extent="16-16"/>
+<wire x1="50.038" y1="-34.798" x2="41.91" y2="2.54" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SEN4">
 <contactref element="IC2" pad="15"/>
@@ -6751,7 +6749,6 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="82.55" x2="30.48" y2="74.93" width="1.016" layer="16"/>
 <contactref element="X3" pad="1"/>
 <contactref element="R19" pad="1"/>
-<contactref element="U$1" pad="IN+"/>
 <wire x1="30.48" y1="74.93" x2="30.48" y2="67.31" width="1.016" layer="16"/>
 <wire x1="30.48" y1="67.31" x2="30.48" y2="59.69" width="1.016" layer="16"/>
 <wire x1="30.48" y1="52.07" x2="30.48" y2="59.69" width="1.016" layer="16"/>
@@ -6774,7 +6771,6 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="16.51" x2="31.75" y2="16.51" width="1.016" layer="1"/>
 <via x="31.75" y="16.51" extent="1-16" drill="0.75"/>
 <wire x1="31.75" y1="16.51" x2="29.21" y2="16.51" width="1.016" layer="16"/>
-<wire x1="43.688" y1="23.876" x2="39.116" y2="23.876" width="1.016" layer="16"/>
 <wire x1="36.83" y1="21.59" x2="36.83" y2="16.51" width="1.016" layer="16"/>
 <wire x1="39.116" y1="23.876" x2="36.83" y2="21.59" width="1.016" layer="16"/>
 <wire x1="39.3954" y1="31.75" x2="39.3954" y2="24.1554" width="0.3048" layer="16"/>
@@ -6797,13 +6793,15 @@ design rules under a new name.</description>
 <wire x1="24.13" y1="9.84" x2="24.13" y2="15.24" width="0.7112" layer="1"/>
 <wire x1="24.13" y1="9.84" x2="26.67" y2="9.84" width="0.7112" layer="1"/>
 <wire x1="29.21" y1="9.84" x2="26.67" y2="9.84" width="0.3048" layer="1"/>
-<wire x1="43.688" y1="23.876" x2="43.688" y2="23.622" width="0.508" layer="16"/>
 <wire x1="48.26" y1="19.05" x2="80.01" y2="19.05" width="0.508" layer="16"/>
 <wire x1="80.01" y1="19.05" x2="80.01" y2="31.75" width="0.508" layer="16"/>
 <via x="80.01" y="31.75" extent="1-16" drill="0.5" diameter="0.65"/>
 <wire x1="80.01" y1="31.75" x2="81.6" y2="33.34" width="0.508" layer="1"/>
 <wire x1="81.6" y1="33.34" x2="81.6" y2="35.56" width="0.508" layer="1"/>
 <wire x1="43.688" y1="23.622" x2="48.26" y2="19.05" width="0.508" layer="16"/>
+<contactref element="U$1" pad="IN+"/>
+<wire x1="39.3954" y1="24.1554" x2="43.688" y2="23.622" width="0" layer="19" extent="16-16"/>
+<wire x1="10.414" y1="-17.526" x2="8.8646" y2="8.89" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="5V">
 <contactref element="C1" pad="2"/>
@@ -6896,14 +6894,6 @@ design rules under a new name.</description>
 <wire x1="62.940025" y1="77.982" x2="63.503525" y2="78.5455" width="0.3048" layer="1"/>
 <wire x1="90.17" y1="19.05" x2="90.17" y2="25.4" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$5">
-<contactref element="U$1" pad="OUT+"/>
-<contactref element="F2" pad="2"/>
-<wire x1="83.312" y1="23.876" x2="83.312" y2="29.718" width="0.6096" layer="16"/>
-<wire x1="83.312" y1="29.718" x2="82.55" y2="30.48" width="0.6096" layer="16"/>
-<via x="82.55" y="30.48" extent="1-16" drill="0.6"/>
-<wire x1="76.96" y1="30.48" x2="82.55" y2="30.48" width="0.6096" layer="1"/>
-</signal>
 <signal name="N$6">
 <contactref element="F2" pad="1"/>
 <contactref element="C5" pad="1"/>
@@ -6949,6 +6939,11 @@ design rules under a new name.</description>
 <wire x1="65.67" y1="29.21" x2="65.67" y2="29.96" width="0.3048" layer="1"/>
 <wire x1="63.87" y1="29.21" x2="65.67" y2="29.21" width="0.3048" layer="1"/>
 </signal>
+<signal name="N$1">
+<contactref element="U$1" pad="OUT+"/>
+<contactref element="F2" pad="2"/>
+<wire x1="50.038" y1="-17.526" x2="76.96" y2="30.48" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 </board>
 </drawing>
@@ -6957,6 +6952,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

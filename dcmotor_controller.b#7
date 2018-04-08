@@ -5385,8 +5385,12 @@ design rules under a new name.</description>
 <wire x1="66.99" y1="64.77" x2="68.58" y2="64.77" width="0.3048" layer="1"/>
 <wire x1="68.58" y1="64.77" x2="70.17" y2="64.77" width="0.3048" layer="1"/>
 <wire x1="68.58" y1="69.85" x2="68.58" y2="64.77" width="0.3048" layer="1"/>
+<contactref element="C14" pad="1"/>
+<contactref element="C22" pad="1"/>
 <wire x1="1.524" y1="80.264" x2="-13.97" y2="83.82" width="0" layer="19" extent="16-16"/>
 <wire x1="-39.37" y1="29.21" x2="1.524" y2="2.54" width="0" layer="19" extent="16-16"/>
+<wire x1="-87.31" y1="97.79" x2="-13.97" y2="83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-105.09" y1="93.98" x2="-87.31" y2="97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEN4">
 <contactref element="IC2" pad="15"/>
@@ -6742,7 +6746,9 @@ design rules under a new name.</description>
 <wire x1="90.17" y1="33.02" x2="90.17" y2="30.48" width="0.3048" layer="1"/>
 <wire x1="90.68" y1="36.83" x2="90.17" y2="36.32" width="0.3048" layer="1"/>
 <wire x1="90.17" y1="36.32" x2="90.17" y2="33.02" width="0.3048" layer="1"/>
+<contactref element="C14" pad="2"/>
 <wire x1="66.14" y1="71.4375" x2="66.14" y2="78.4225" width="0" layer="19" extent="1-1"/>
+<wire x1="-85.41" y1="97.79" x2="39.37" y2="76.2" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$1" pad="OUT+"/>

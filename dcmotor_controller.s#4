@@ -29805,10 +29805,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
 <wire x1="-353.06" y1="78.74" x2="-353.06" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="-327.66" y1="78.74" x2="-327.66" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND50" gate="1" pin="GND"/>
@@ -30756,6 +30758,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <segment>
 <wire x1="-353.06" y1="91.44" x2="-353.06" y2="101.6" width="0.1524" layer="91"/>
 <label x="-353.06" y="101.6" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="C14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>

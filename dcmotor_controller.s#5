@@ -29745,18 +29745,22 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <segment>
 <wire x1="-368.3" y1="127" x2="-373.38" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="1" pin="GND"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-312.42" y1="127" x2="-307.34" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="-307.34" y1="185.42" x2="-312.42" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-368.3" y1="185.42" x2="-373.38" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="1" pin="GND"/>
+<pinref part="R63" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="GND@7"/>
@@ -30724,24 +30728,28 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <segment>
 <pinref part="IC5" gate="G$1" pin="2DIR"/>
 <wire x1="-358.14" y1="127" x2="-353.06" y2="127" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="2!OE"/>
 <wire x1="-322.58" y1="127" x2="-327.66" y2="127" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="1!OE"/>
 <wire x1="-322.58" y1="185.42" x2="-327.66" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="1DIR"/>
 <wire x1="-358.14" y1="185.42" x2="-353.06" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="R63" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="5V" class="0">
