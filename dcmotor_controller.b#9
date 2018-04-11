@@ -169,10 +169,11 @@
 <board>
 <fusionsync huburn="a.cGVyc29uYWw6dWUyODdlZWVl" projecturn="a.cGVyc29uYWw6dWUyODdlZWVlIzIwMTgwNDA4MTI2NTg3MzI2" f3durn="urn:adsk.wipprod:dm.lineage:cQiRumaYQySxqMgdQmJA_w" pcbguid="6678936a-43be-4169-baa4-ea48a086b149" lastpulledtime="" lastsyncedchangeguid="47db0d4f-7243-e3a9-a740-30e95a28c65b"/>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="-0.254" y1="-0.254" x2="141.966" y2="0" width="0" layer="20"/>
+<wire x1="141.966" y1="0" x2="141.966" y2="90.348" width="0" layer="20"/>
+<wire x1="141.966" y1="90.348" x2="0" y2="90.348" width="0" layer="20"/>
+<wire x1="0" y1="90.348" x2="-0.254" y2="-0.254" width="0" layer="20"/>
+<text x="103.886" y="1.524" size="1.778" layer="1">SCORPIO JUNIOR BOARD</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
