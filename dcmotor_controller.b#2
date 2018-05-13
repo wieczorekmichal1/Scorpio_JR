@@ -3,7 +3,7 @@
 <eagle version="8.7.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -6993,14 +6993,12 @@ design rules under a new name.</description>
 <signal name="SCL">
 <contactref element="R11" pad="1"/>
 <contactref element="SV6" pad="5"/>
-<contactref element="U2" pad="30"/>
 <via x="97.5226875" y="14.9726875" extent="1-16" drill="0.5" diameter="0.65"/>
 <wire x1="96.52" y1="16.51" x2="97.2686875" y2="15.7613125" width="0.3048" layer="16"/>
 <via x="96.52" y="16.51" extent="1-16" drill="0.5" diameter="0.65"/>
 <wire x1="96.52" y1="16.51" x2="96.52" y2="19.05" width="0.3048" layer="1"/>
 <wire x1="96.52" y1="19.05" x2="95.25" y2="20.32" width="0.3048" layer="1"/>
 <wire x1="95.25" y1="20.32" x2="94.93" y2="20.32" width="0.3048" layer="1"/>
-<wire x1="96.73" y1="48.91" x2="96.73" y2="46.526" width="0.3048" layer="1"/>
 <wire x1="95.25" y1="10.668" x2="95.25" y2="8.89" width="0.3048" layer="1"/>
 <wire x1="96.73" y1="46.526" x2="98.552" y2="44.704" width="0.3048" layer="1"/>
 <wire x1="98.552" y1="44.704" x2="98.552" y2="14.986" width="0.3048" layer="1"/>
@@ -7010,18 +7008,20 @@ design rules under a new name.</description>
 <wire x1="98.5386875" y1="14.9726875" x2="98.552" y2="14.986" width="0.3048" layer="1"/>
 <wire x1="97.2686875" y1="15.7613125" x2="97.2686875" y2="15.2266875" width="0.3048" layer="16"/>
 <wire x1="97.2686875" y1="15.2266875" x2="97.5226875" y2="14.9726875" width="0.3048" layer="16"/>
+<contactref element="U2" pad="29"/>
+<wire x1="96.73" y1="46.526" x2="96.23" y2="48.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="R10" pad="1"/>
 <contactref element="SV6" pad="3"/>
-<contactref element="U2" pad="29"/>
-<wire x1="96.23" y1="48.91" x2="96.23" y2="46.01" width="0.3048" layer="1"/>
 <wire x1="97.79" y1="16.51" x2="92.71" y2="11.43" width="0.3048" layer="1"/>
 <wire x1="92.71" y1="11.43" x2="92.71" y2="8.89" width="0.3048" layer="1"/>
 <wire x1="96.23" y1="46.01" x2="97.79" y2="44.45" width="0.3048" layer="1"/>
 <wire x1="97.79" y1="44.45" x2="97.79" y2="22.86" width="0.3048" layer="1"/>
 <wire x1="97.79" y1="22.86" x2="97.79" y2="16.51" width="0.3048" layer="1"/>
 <wire x1="94.93" y1="22.86" x2="97.79" y2="22.86" width="0.3048" layer="1"/>
+<contactref element="U2" pad="30"/>
+<wire x1="96.23" y1="46.01" x2="96.73" y2="48.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NRST">
 <contactref element="R12" pad="1"/>
@@ -8446,18 +8446,14 @@ design rules under a new name.</description>
 <approved hash="5,1,09d215a3105e9556"/>
 <approved hash="5,1,892bc0312da65d2d"/>
 <approved hash="5,1,3e6af76ee360b3f7"/>
-<approved hash="5,1,1d44046f56b4b23b"/>
 <approved hash="5,1,6df285d019dee212"/>
 <approved hash="5,1,36712fdc71c70790"/>
 <approved hash="5,1,3988f088e486b415"/>
 <approved hash="5,1,4e6c191b0d15c3f1"/>
-<approved hash="5,1,8cc79c0d5efc95c1"/>
-<approved hash="5,1,1d440c86594195cf"/>
 <approved hash="5,1,b7abd4a258f5a846"/>
 <approved hash="5,1,a13a68afe8dfd0c7"/>
 <approved hash="5,1,243d6c19d00ae48a"/>
 <approved hash="5,1,26f4eea152b3648a"/>
-<approved hash="5,1,8cc791995782b4b8"/>
 <approved hash="5,1,95af32a6bef28a41"/>
 <approved hash="5,1,5b788bfd4fe096f6"/>
 <approved hash="5,1,6d56b470706da0d8"/>
@@ -8579,7 +8575,6 @@ design rules under a new name.</description>
 <approved hash="5,1,4bfd1b680f66c660"/>
 <approved hash="5,1,3bf9f51fe111b664"/>
 <approved hash="5,1,c0352fc471def1d5"/>
-<approved hash="5,1,8f3d821c9f6a02c1"/>
 <approved hash="5,1,5caa60207e54be20"/>
 <approved hash="5,1,cdc42fc471defc24"/>
 <approved hash="5,1,c23c0b5a1f544fa1"/>
@@ -8589,7 +8584,6 @@ design rules under a new name.</description>
 <approved hash="5,1,2fb776947302a3b7"/>
 <approved hash="5,1,a8c50fb0b24632ca"/>
 <approved hash="5,1,a8c50f8cdc69facf"/>
-<approved hash="5,1,1e3313120e6493cf"/>
 <approved hash="5,1,4eb5ddbc51e8515b"/>
 </errors>
 </board>
