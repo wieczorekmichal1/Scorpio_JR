@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="inch" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -32329,6 +32329,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-228.6" y1="241.3" x2="-228.6" y2="243.84" width="0.1524" layer="91"/>
 <label x="-228.6" y="243.84" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="PORTB_H" pin="PB8"/>
+<wire x1="-530.86" y1="243.84" x2="-528.32" y2="243.84" width="0.1524" layer="91"/>
+<label x="-528.32" y="243.84" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="CSN" class="0">
 <segment>
@@ -32350,6 +32355,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="SV5" gate="1" pin="5"/>
 <wire x1="-228.6" y1="226.06" x2="-228.6" y2="223.52" width="0.1524" layer="91"/>
 <label x="-228.6" y="223.52" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="PORTB_H" pin="PB9"/>
+<wire x1="-530.86" y1="241.3" x2="-528.32" y2="241.3" width="0.1524" layer="91"/>
+<label x="-528.32" y="241.3" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SEN1" class="0">
@@ -33128,27 +33138,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-431.8" y1="256.54" x2="-429.26" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U2" gate="PORTB_L" pin="PB3"/>
-<wire x1="-530.86" y1="269.24" x2="-528.32" y2="269.24" width="0.1524" layer="91"/>
-<label x="-528.32" y="269.24" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="U2" gate="PORTB_L" pin="PB4"/>
-<wire x1="-530.86" y1="266.7" x2="-528.32" y2="266.7" width="0.1524" layer="91"/>
-<label x="-528.32" y="266.7" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<pinref part="U2" gate="PORTB_L" pin="PB5"/>
-<wire x1="-530.86" y1="264.16" x2="-528.32" y2="264.16" width="0.1524" layer="91"/>
-<label x="-528.32" y="264.16" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R48" gate="G$1" pin="2"/>
@@ -33182,6 +33171,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-165.1" y1="259.08" x2="-167.64" y2="259.08" width="0.1524" layer="91"/>
 <label x="-167.64" y="259.08" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="PORTB_L" pin="PB3"/>
+<wire x1="-530.86" y1="269.24" x2="-528.32" y2="269.24" width="0.1524" layer="91"/>
+<label x="-528.32" y="269.24" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RPI_MISO" class="0">
 <segment>
@@ -33189,12 +33183,22 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-165.1" y1="256.54" x2="-167.64" y2="256.54" width="0.1524" layer="91"/>
 <label x="-167.64" y="256.54" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="PORTB_L" pin="PB4"/>
+<wire x1="-530.86" y1="266.7" x2="-528.32" y2="266.7" width="0.1524" layer="91"/>
+<label x="-528.32" y="266.7" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RPI_MOSI" class="0">
 <segment>
 <pinref part="SV6" gate="G$1" pin="19"/>
 <wire x1="-165.1" y1="254" x2="-167.64" y2="254" width="0.1524" layer="91"/>
 <label x="-167.64" y="254" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="PORTB_L" pin="PB5"/>
+<wire x1="-530.86" y1="264.16" x2="-528.32" y2="264.16" width="0.1524" layer="91"/>
+<label x="-528.32" y="264.16" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
